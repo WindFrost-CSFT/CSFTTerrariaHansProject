@@ -1,0 +1,16 @@
+{
+	"Mobile": {
+		"EditControllerMappings": "控制器绑定：",
+		"ControllerDeviceTitle": "控制器：",
+		"EditControllerProfile": "控制器硬件：",
+		"Controller": "控制器",
+		"ControllerShowControlsBannerTitle": "控制旗帜：",
+		"ControllerDisconnected": "请重新连接控制器以继续……"
+	},
+	"GameUI": {
+		"ControllerMappingsMenu": "控制器设置"
+	},
+	"Tutorial": {
+		"OpenSettings": "[cm:15]设置菜单有一系列的选项可以让你自定义游戏以适应你的游玩风格。如果你觉得很难找到物品栏，你可以在界面选项卡中编辑布局，以及调整界面上几乎所有的东西。你还可以在控制器选项卡中的“修改控制器绑定”里修改所有的按键绑定。"
+	}
+}
