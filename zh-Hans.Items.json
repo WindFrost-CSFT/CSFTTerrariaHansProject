@@ -8596,7 +8596,7 @@
 		"CorruptWhip": "5点召唤标记伤害\n{$CommonItemTooltip.Whips}\n“用邪恶化身的残余鞭打你的敌人”",
 		"CrimsonWhip": "5点召唤标记伤害\n{$CommonItemTooltip.Whips}\n“动脉、静脉和肌腱！”",
 		"MeteorWhip": "2点召唤标记伤害\n{$CommonItemTooltip.Whips}\n用预置能量打击敌人\n陨石落在被召唤物击中的预置敌人身上",
-		"FlowerWhip": "9点召唤标记伤害\n{$CommonItemTooltip.Whips}\n用挥发性能量打击敌人\n被召唤物击中的敌人会绽放出猛烈的花瓣\n“从丛林女王身上扯下来一根带刺鞭子？太酷了！”可被抽离",
+		"FlowerWhip": "9点召唤标记伤害\n{$CommonItemTooltip.Whips}\n用挥发性能量打击敌人\n被召唤物击中的敌人会绽放出猛烈的花瓣\n“从丛林女王身上扯下来一根带刺鞭子？太酷了！”\n可被抽离",
 		"EelWhip": "12点召唤标记伤害\n\n5%召唤标记暴击率\n{$CommonItemTooltip.Whips}\n用电能打击敌人\n电能在敌人之间产生共鸣",
 		"ConstellationWhip": "15点召唤标记伤害\n15%召唤标记暴击率\n{$CommonItemTooltip.Whips}\n击中敌人会散落友方星星",
 		"DeadCellsSwarmGrenade": "召唤宠物咬咬虫群\n“小心，听说它们会咬人！”\n《死亡细胞》联动物品",
