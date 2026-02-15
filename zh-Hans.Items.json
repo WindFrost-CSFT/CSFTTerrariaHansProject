@@ -5566,7 +5566,7 @@
 		"EchoCoating": "回声涂料",
 		"GasTrap": "毒气陷阱",
 		"UsedGasTrap": "用过的毒气陷阱",
-		"EchoMonolith": "	回声腔",
+		"EchoMonolith": "回声腔",
 		"ShimmerMonolith": "以太天塔柱",
 		"ShimmerArrow": "微光箭",
 		"ShimmerCloak": "炫彩斗篷",
@@ -6136,7 +6136,7 @@
 		"HeroesFromAnotherWorld": "异域英雄",
 		"Crystallize": "结晶",
 		"EaterOfLife": "生命吞噬者",
-		"ThisIsCanonNow": "	巴西天空",
+		"ThisIsCanonNow": "巴西天空",
 		"WinterAtVaringskollen": "瓦林斯考伦之冬",
 		"MagicShimmerDropper": "魔法微光滴管",
 		"ShimmerFallBlock": "微光瀑块",
@@ -6984,7 +6984,7 @@
 		"BlackBelt": "有机会避开攻击",
 		"Boomstick": "射出一连串子弹",
 		"Rope": "可供攀爬",
-		"Campfire": "靠近篝火时生命再生增加",
+		"Campfire": "靠近篝火时生命再生增加\n在微光中嬗变为[i:5357]",
 		"Marshmallow": "把它放在棍子上，然后放到篝火上烤\n{$CommonItemTooltip.MinorStats}\n“你一口能吃下多少？”",
 		"MarshmallowonaStick": "放在篝火上烤！",
 		"ShoeSpikes": "可沿墙滑下\n结合攀爬爪使用时可提升能力\n在微光中嬗变为[i:953]",
@@ -9040,6 +9040,8 @@
 		"PeddlersHat": "在微光中嬗变为[i:5343]",
 		"TorchAddition": "在微光中嬗变为[i:5353]",
 		"WoodenArrow": "在微光中嬗变为[i:5348]",
-		"HellfireArrow": "在微光中嬗变为[i:5348]"
+		"HellfireArrow": "在微光中嬗变为[i:5348]",
+		"Flare": "在微光中嬗变为[i:5380]",
+		"BlueFlare": "在微光中嬗变为[i:5380]"
 	}
 }
