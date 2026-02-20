@@ -873,6 +873,10 @@
 		"AppleNetSharingSafetyWarning": "When you choose to host or join a local crossplay session, 505 Games learn that you want to connect with other players over your local network and we use your local IP address to make that connection.\n\nWe don't save this information and we don't know who you or other players are in real life. You can always play the other game modes if you don't like this.\n\nDo you still want to play multiplayer over your local network?",
 		"AppleNetSharingSafetyAlwaysAllow": "Always",
 		"AppleNetSharingSafetyAllow":  "Allow",
+		"PortraitMode_Detailed": "Detailed",
+		"PortraitMode_CloseUp": "Close Up",
+		"PortraitMode_Retro": "Retro",
+		"PortraitModeTitle": "Portraits Style:"
 	},
 	"ProfileName": {
 		"Profile1": "Fullscreen",
