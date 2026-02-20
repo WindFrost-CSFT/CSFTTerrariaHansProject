@@ -1,0 +1,36 @@
+{
+  "UseDarkTheme": false,
+  "UseCpp2Il": true,
+  "ImportDir": "C:/Users/Cjx/Desktop/Code/Hans/Import",
+  "ExportDir": "C:/Users/Cjx/Desktop/Code/Hans/Export",
+  "WorkDir": "C:/Users/Cjx/Desktop/Code/Hans/WorkDir",
+  "OriginPath": "C:/Users/Cjx/Desktop/Code/Hans/data.unity3d.origin",
+  "OutputPath": "C:/Users/Cjx/Desktop/Code/Hans/Output/data.unity3d",
+  "WorkDirFileNameMapping": {
+    "zh-Hans": "en-US",
+    "en-US": "fr-FR"
+  },
+  "ExportWhitelist": [
+    "en-US",
+    "fr-FR",
+    "de-DE",
+    "ru-RU",
+    "it-IT",
+    "es-ES",
+    "pt-BR",
+    "ja-JP",
+    "ko-KR",
+    "Combat_Crit",
+    "Death_Text",
+    "Item_Stack",
+    "Mouse_Text"
+  ],
+  "EnableTexture2D": true,
+  "LanguageFieldReplacements": {
+    "English": "亚共版汉化修正",
+    "French": "English"
+  },
+  "LanguageFieldReplacementFilters": [
+    "en-US"
+  ]
+}
