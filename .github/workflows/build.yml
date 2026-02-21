@@ -40,6 +40,8 @@ jobs:
             }
           }
           
+          Copy-Item -Path backup_config\config.json -Destination work\config.json -Force
+          
       - name: Download Origin File from Release
         uses: actions/github-script@v7
         with:
@@ -109,7 +111,6 @@ jobs:
         run: |
           Expand-Archive -Force unpack_tool.zip -DestinationPath unpack_tool
           Copy-Item -Path work\* -Destination unpack_tool\ -Recurse -Force
-          Copy-Item -Path config.json -Destination unpack_tool\config.json -Force
           Copy-Item -Path data.unity3d.origin -Destination unpack_tool\data.unity3d.origin -Force
           cd unpack_tool
           Get-ChildItem -Recurse | Select-Object FullName
