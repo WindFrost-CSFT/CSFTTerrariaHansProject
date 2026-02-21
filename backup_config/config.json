@@ -1,9 +1,9 @@
 {
   "UseDarkTheme": false,
   "UseCpp2Il": true,
-  "ImportDir": "Import",
-  "ExportDir": "Export",
-  "WorkDir": "WorkDir",
+"ImportDir": "import",
+  "ExportDir": "export",
+  "WorkDir": "work",
   "OriginPath": "",
   "OutputPath": "",
   "WorkDirFileNameMapping": {
