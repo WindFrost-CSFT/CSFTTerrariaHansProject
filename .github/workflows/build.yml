@@ -113,8 +113,7 @@ jobs:
           Copy-Item -Path work\* -Destination unpack_tool\ -Recurse -Force
           Copy-Item -Path data.unity3d.origin -Destination unpack_tool\data.unity3d.origin -Force
           cd unpack_tool
-          Get-ChildItem -Recurse | Select-Object FullName
-          .\UnpackTerrariaTextAsset.exe -autowork data.unity3d.origin data.unity3d
+          .\UnpackTerrariaTextAsset.exe -autowork
           
       - name: Upload Output as Artifact
         uses: actions/upload-artifact@v4

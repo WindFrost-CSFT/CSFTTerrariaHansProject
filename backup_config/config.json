@@ -1,11 +1,11 @@
 {
   "UseDarkTheme": false,
   "UseCpp2Il": true,
-  "ImportDir": "Import",
-  "ExportDir": "Export",
-  "WorkDir": "WorkDir",
-  "OriginPath": "",
-  "OutputPath": "",
+  "ImportDir": "import",
+  "ExportDir": "export",
+  "WorkDir": "work",
+  "OriginPath": "data.unity3d.origin",
+  "OutputPath": "data.unity3d",
   "WorkDirFileNameMapping": {
     "zh-Hans": "en-US",
     "en-US": "fr-FR"
