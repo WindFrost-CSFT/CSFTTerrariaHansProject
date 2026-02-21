@@ -17,6 +17,8 @@ jobs:
       - name: Prepare Work Directory
         run: |
           mkdir -p work/Text
+          mkdir -p work/backup_en
+          mkdir -p work/backup_else
           mkdir -p import
           mkdir -p export
           
@@ -46,9 +48,11 @@ jobs:
           # 复制backup_en和backup_else内容
           for dir in backup_en backup_else; do
             if [ -d "$dir" ]; then
+              target_dir="work/$dir"
+              mkdir -p "$target_dir"
               for file in "$dir"/*; do
                 if [ -f "$file" ]; then
-                  cp "$file" "work/$file"
+                  cp "$file" "$target_dir/"
                 fi
               done
             fi
