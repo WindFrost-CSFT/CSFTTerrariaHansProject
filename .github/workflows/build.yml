@@ -1,4 +1,4 @@
-name: Build Hanteria Chinese Localization
+name: Build data.untiy3d File
 
 on:
   push:
