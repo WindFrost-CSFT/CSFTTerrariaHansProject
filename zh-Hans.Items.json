@@ -8266,7 +8266,7 @@
     "Fedora": "*提示*夫人",
     "PigronMinecart": "“培根驱动！”",
     "QuadBarrelShotgun": "“当两管或三管霰弹枪不管用时使用”",
-    "SparkleGuitar": "“Random Star？！”\n让使用者变得KrKrDokiDoki",
+    "SparkleGuitar": "“是Random Star？！”\n让使用者变得KrKrDokiDoki",
     "BouncingShield": "“这个我可以做一整天”",
     "BunnyTail": "“这就是人们叫我桑普的原因”",
     "CombatWrench": "“既能修理东西，也能破坏东西”",
@@ -8307,7 +8307,7 @@
     "RoninPants": "它不断提醒你，通往山顶的路不止一条。\n概念设计：crowflux",
     "RainbowCursor": "可让你的鼠标光标具有不断变化的彩虹色",
     "BoneWhip": "使召唤的仆从增加7点伤害\n{$CommonItemTooltip.Whips}\n对抗多个目标时，比大多数鞭子表现更好\n“这是第十一个”",
-    "Princess64": "{$PaintingArtist.Lazure}\n感谢支持亚共版汉化修正！\n参与人员：\n世界的草钩叉\n小史\n特别鸣谢：\n一只皮皮蛙（大量参考）\n中文wiki",
+    "Princess64": "{$PaintingArtist.Lazure}",
     "PaintingOfALass": "{$PaintingArtist.Lazure}",
     "DarkSideHallow": "{$PaintingArtist.Lazure}",
     "GlommerPetItem": "召唤一只格鲁姆\n“花瓣闪烁着光芒”\n《饥荒联机版》联动物品",
@@ -8623,7 +8623,7 @@
     "Poulder": "“我随心所欲”",
     "SuperFertilizer": "“它满足了植物的渴求！”",
     "BoulderPet": "召唤友好的巨石跟随你滚动\n“让我们摇滚起来吧！”\n在微光中嬗变为[i:5654]",
-    "ChlorophyteVisor": "仆从数量上限提高1个\n召唤伤害增加12%",
+    "ChlorophyteVisor": "仆从数量上限提高1个\n召唤伤害增加12%\n是[i:4873]防御的两倍\n而且丑的一笔（划掉）",
     "FlaironFlail": "喷出自动寻的泡泡\n<switchmode>",
     "OfSeaAndDreams": "{$PaintingArtist.Gejdel}",
     "TheRunicPixie": "{$PaintingArtist.Egdom}",
@@ -9061,6 +9061,7 @@
     "CrimsonTorch": "{$ItemTooltip.TorchAddition}",
     "HallowedTorch": "{$ItemTooltip.TorchAddition}",
     "JungleTorch": "{$ItemTooltip.TorchAddition}",
-    "MushroomTorch": "{$ItemTooltip.TorchAddition}"
+    "MushroomTorch": "{$ItemTooltip.TorchAddition}",
+    "TurtleShell": "“但是为啥陆龟会掉海龟壳？”"
   }
 }
