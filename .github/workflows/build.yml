@@ -43,12 +43,12 @@ jobs:
             done
           done
           
-          # 复制backup_en和backup_else内容
+          # 复制backup_en和backup_else内容（扁平化）
           for dir in backup_en backup_else; do
             if [ -d "$dir" ]; then
               for file in "$dir"/*; do
                 if [ -f "$file" ]; then
-                  cp "$file" "work/$file"
+                  cp "$file" "work/"
                 fi
               done
             fi
