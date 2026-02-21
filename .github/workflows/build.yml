@@ -1,0 +1,137 @@
+name: Build Hanteria Chinese Localization
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+        
+      - name: Prepare Work Directory
+        run: |
+          mkdir -p work/Text
+          mkdir -p import
+          mkdir -p export
+          
+      - name: Prepare Localization Files
+        run: |
+          # 复制json文件到work目录（扁平化）
+          for file in zh-Hans*.json; do
+            if [ -f "$file" ]; then
+              cp "$file" "work/$file"
+            fi
+          done
+          
+          # 复制Text目录内容（扁平化，排除combat_text）
+          for dir in Text/*/; do
+            dirname=$(basename "$dir")
+            if [ "$dirname" = "Combat_Text" ]; then
+              continue
+            fi
+            for file in "$dir"*; do
+              if [ -f "$file" ]; then
+                filename=$(basename "$file")
+                cp "$file" "work/Text/$filename"
+              fi
+            done
+          done
+          
+          # 复制backup_en和backup_else内容
+          for dir in backup_en backup_else; do
+            if [ -d "$dir" ]; then
+              for file in "$dir"/*; do
+                if [ -f "$file" ]; then
+                  cp "$file" "work/$file"
+                fi
+              done
+            fi
+          done
+          
+      - name: Download Origin File from Release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const releases = await github.rest.repos.listReleases({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const release = releases.data.find(r => r.tag_name === 'workflow-release');
+            if (!release) {
+              core.setFailed('Release not found. Please upload origin file first using manage-release workflow.');
+              return;
+            }
+            
+            const assets = await github.rest.repos.listReleaseAssets({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: release.id
+            });
+            
+            const asset = assets.data.find(a => a.name === 'data.unity3d.origin');
+            if (!asset) {
+              core.setFailed('Origin file not found in release.');
+              return;
+            }
+            
+            // 下载文件
+            const fs = require('fs');
+            const response = await fetch(asset.browser_download_url);
+            const buffer = await response.arrayBuffer();
+            fs.writeFileSync('data.unity3d.origin', Buffer.from(buffer));
+            console.log('Downloaded origin file');
+            
+      - name: Download Unpack Tool from Release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const releases = await github.rest.repos.listReleases({
+              owner: 'Cjx8848',
+              repo: 'UnpackTerrariaTextAsset'
+            });
+            
+            if (releases.data.length === 0) {
+              core.setFailed('UnpackTerrariaTextAsset release not found.');
+              return;
+            }
+            
+            const latestRelease = releases.data[0];
+            const assets = await github.rest.repos.listReleaseAssets({
+              owner: 'Cjx8848',
+              repo: 'UnpackTerrariaTextAsset',
+              release_id: latestRelease.id
+            });
+            
+            const zipAsset = assets.data.find(a => a.name.endsWith('.zip'));
+            if (!zipAsset) {
+              core.setFailed('Unpack tool zip not found in release.');
+              return;
+            }
+            
+            const fs = require('fs');
+            const response = await fetch(zipAsset.browser_download_url);
+            const buffer = await response.arrayBuffer();
+            fs.writeFileSync('unpack_tool.zip', Buffer.from(buffer));
+            console.log('Downloaded unpack tool');
+            
+      - name: Extract and Run Unpack Tool
+        run: |
+          unzip -o unpack_tool.zip -d unpack_tool
+          cp -r work/* unpack_tool/
+          cp data.unity3d.origin unpack_tool/data.unity3d.origin
+          cd unpack_tool
+          chmod +x UnpackTerrariaTextAsset
+          ./UnpackTerrariaTextAsset -autowork data.unity3d.origin data.unity3d
+          
+      - name: Upload Output as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: data.unity3d
+          path: unpack_tool/data.unity3d
+          retention-days: 30
