@@ -1,11 +1,11 @@
 {
   "UseDarkTheme": false,
   "UseCpp2Il": true,
-  "ImportDir": "C:/Users/Cjx/Desktop/Code/Hans/Import",
-  "ExportDir": "C:/Users/Cjx/Desktop/Code/Hans/Export",
-  "WorkDir": "C:/Users/Cjx/Desktop/Code/Hans/WorkDir",
-  "OriginPath": "C:/Users/Cjx/Desktop/Code/Hans/data.unity3d.origin",
-  "OutputPath": "C:/Users/Cjx/Desktop/Code/Hans/Output/data.unity3d",
+  "ImportDir": "Import",
+  "ExportDir": "Export",
+  "WorkDir": "WorkDir",
+  "OriginPath": "",
+  "OutputPath": "",
   "WorkDirFileNameMapping": {
     "zh-Hans": "en-US",
     "en-US": "fr-FR"
