@@ -35,7 +35,8 @@
 3. 完成后安装即可，建议备份存档后再安装
 
 ## 工具
-- 自动生成/打包语言与字体工具：https://github.com/Cjx8848/UnpackTerrariaTextAsset
+- 自动生解包/打包语言与字体工具：https://github.com/Cjx8848/UnpackTerrariaTextAsset
+- 自动生成字体分页与txt文件：
 
 ## 仓库
 - GitHub：https://github.com/WindFrost-CSFT/CSFTTerrariaHansProject
