@@ -124,6 +124,6 @@ jobs:
       - name: Upload Output as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: result.zip
+          name: result
           path: unpack_tool/data.unity3d
           retention-days: 30
