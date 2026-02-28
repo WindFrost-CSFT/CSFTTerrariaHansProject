@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - opencode_server
+      - font_test
   workflow_dispatch:
 
 jobs:
