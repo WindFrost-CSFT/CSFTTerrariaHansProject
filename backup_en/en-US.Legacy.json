@@ -831,7 +831,7 @@
 		"26": "*{0} was slain by other players {1} time.",
 		"2": "Invalid operation at this state.",
 		"3": "You are banned from this session.",
-		"4": "You are not using the same verison as this session.",
+		"4": "You are not using the same version as this session.",
 		"5": "{0} is already in this session.",
 		"6": "/playing",
 		"7": "Current players:",

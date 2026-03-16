@@ -1319,9 +1319,9 @@
 		"PixieMount": "You turned into a pixie!",
 		"PalworldMinionFoxsparks": "Foxparks will fight for you",
 		"PalworldMinionCattiva": "Cattiva will fight for you",
-		"PalworldPetChillet": "Chillet is exploring with you. The movement is quite intense!",
-		"PalworldPetChilletIgnis": "Chillet Ignis is exploring with you. Be careful of petting it too long, or sparks WILL start flying!",
-		"Kite": "Slightly increased movement speed, mining speed, and placement speed"
+		"PalworldPetChillet": "Chillet is exploring with you\nThe movement is quite intense!",
+		"PalworldPetChilletIgnis": "Chillet Ignis is exploring with you\nBe careful of petting it too long, or sparks WILL start flying!",
+		"Kite": "Slightly increased movement speed, mining speed, and placement speed",
 	},
 	"ArmorSetBonus": {
 		"SquireTier3": "Increases your max number of sentries by 1\nGreatly enhances Ballista effectiveness",

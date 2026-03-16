@@ -30,10 +30,18 @@
 		"GenericMPError": "Multiplayer not available",
 		"CantConnectToDedicatedServers": "Unable to join world, please ensure you're connecting to a player hosted world"
 	},
+	"DiscordPresence":{
+		"Menu": "In Menus",
+		"Tutorial" : "In Tutorial",
+		"SinglePlayer": "In Single Player Session",
+		"LocalMultiplayer": "In Local Multiplayer Session",
+		"OnlineMultiplayer": "In Online Multiplayer Session",
+		"CrossplayMultiplayer": "In Crossplay Multiplayer Session",
+	},
 	"AppleArcade": {
-		"NotSignedIn": "Please sign into Game Center to play multiplayer.",
-		"Underaged":  "To protect children's privacy, this Game Center account is restricted from playing WIFI multiplayer. You can still play other game modes.",
-		"NoMultiplayerPermisssions": "You are not permitted to play this mode due to your Game Center account settings. For help, talk to the adult who manages your account."
+		"NotSignedIn": "Please sign into your Game Center account to play multiplayer sessions.",
+		"Underaged":  "Your Game Center account does not meet the age requirement to play local crossplay multiplayer sessions.",
+		"NoMultiplayerPermisssions": "Your Game Center account does not have permission to play multiplayer sessions."
 	},
 	"Mobile": {
 		"MaxPlayers": "Max. Players:",
@@ -261,7 +269,7 @@
 		"LockOnTitle": "Lock On Priority:",
 		"LockOnValueTargetClosest": "Target Closest",
 		"LockOnValueThreeDS": "Clearest Line",
-		"LeftStickJumpTitle": "Up To Jump:",
+		"LeftStickJumpTitle": "Up to Jump:",
 		"LeftStickJumpValueDoubleTap": "Double Tap",
 		"LeftStickJumpValueSingleTap": "Single Tap",
 		"LeftStickJumpValueUp": "Swipe",
@@ -846,11 +854,11 @@
 		"TouchControlsConfigureEdit": "Controls...",
 		"TouchControlsConfigureLater": "Later",
 		"ControlsTryUsingTooltip": "Try out these controls, move them for comfort, or edit a custom scheme of your own",
-		"GameCenterDescriptionOn": "Invite players via Game Center to join this session.",
-		"GameCenterDescriptionOff": "Dont setup a Game Center session",
+		"GameCenterDescriptionOn": "Friends must be invited to join this multiplayer session.",
+		"GameCenterDescriptionOff": "Friends cannot be invited to join this multiplayer session.",
 		"GameCenterTitle": "Game Center:",
-		"AppleArcadeCrossplayDescriptionOn": "Players can join this session from any platform on your local network",
-		"AppleArcadeCrossplayDescriptionOff": "Players on the local network wont be able to join this session",
+		"AppleArcadeCrossplayDescriptionOn": "Players can join this multiplayer session from any platform on your local network.",
+		"AppleArcadeCrossplayDescriptionOff": "Players from any platform on your local network cannot join this multiplayer session.",
 		"AppleArcadeDeleteStep1Message": "Are you sure you want to delete your save data for {0}?",
 		"AppleArcadeDeleteStep1PositiveButton": "Yes",
 		"AppleArcadeDeleteStep1NegativeButton": "No",
@@ -876,7 +884,14 @@
 		"PortraitMode_Detailed": "Detailed",
 		"PortraitMode_CloseUp": "Close Up",
 		"PortraitMode_Retro": "Retro",
-		"PortraitModeTitle": "Portraits Style:"
+		"PortraitModeTitle": "Portrait Style:",
+		"SignEditBlockedByPermissions":  "User generated text is hidden in this multiplayer session due to settings, account permissions or platform restrictions.",
+		"NonRequiredControllerDisconnected": "Please reconnect your controller or use any other input to continue.",
+		"NonRequiredControllerClose": "Continue",
+		"SaveDataNewer": "This save data is from a newer version of the game. Please update the game on this device to load this save.",
+		"SaveDataOlder": "This save data is from an older version of the game. Loading this save will update it to a newer version and will no longer be compatible with previous versions of the game you may have on other devices.",
+		"DashModeTitle": "Left/Right to Dash:",
+		"ArmorSetAbilityModeTitle": "Down for Armor Set Ability:"
 	},
 	"ProfileName": {
 		"Profile1": "Fullscreen",
@@ -1053,7 +1068,9 @@
 		"Loadout2": "Loadout 2",
 		"Loadout3": "Loadout 3",
 		"LoadoutCycle": "Cycle Loadout",
-		"TakeOne": "Take One"
+		"TakeOne": "Take One",
+		"Dash": "Dash",
+		"ArmorSetAbility" :  "Armor Set Ability",
 	},
 	"KeyboardMappings": {
 		"MovementAxis_X_0": "Move Left",
@@ -1106,7 +1123,9 @@
 		"Loadout1": "Loadout 1",
 		"Loadout2": "Loadout 2",
 		"Loadout3": "Loadout 3",
-		"LoadoutCycle": "Cycle Loadout"
+		"LoadoutCycle": "Cycle Loadout",
+		"Dash": "Dash",
+		"ArmorSetAbility" :  "Armor Set Ability",
 	},
 	"InterfaceProfiles": {
 		"Classic": "Classic",
