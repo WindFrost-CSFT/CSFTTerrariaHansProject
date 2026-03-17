@@ -23,7 +23,7 @@
 		"DOWN": "Down"
 	},
 	"Language": {
-		"English": "亚共版汉化修正 v2026.11",
+		"English": "亚共版汉化修正 v2026.13",
 		"Spanish": "特别鸣谢（参考）：一只皮皮蛙，中文wiki",
 		"French": "English",
 		"Italian": "同时也欢迎各位来服务器一起游玩！",
@@ -401,6 +401,43 @@
 		"HousingAssign": "分配{0}",
 		"HousingEvict": "解除{0}",
 		"HousingAim": "瞄准"
+	},
+	"SecretSeedDescription": {
+		"paintEverythingGray": "回到那个没有五颜六色烦扰的单纯时代吧！ （世界被涂成灰色）",
+		"paintEverythingNegative": "等等，反过来。 （世界被涂成反相色）",
+		"coatEverythingEcho": "明明就在眼前，却又像被藏起来了一样。 （世界被回声涂层覆盖）",
+		"coatEverythingIlluminant": "这里怎么这么亮？ （世界被荧光涂层覆盖）",
+		"noSurface": "地表？那玩意早过时了。 （世界没有地表层）",
+		"extraLivingTrees": "还有什么比快乐的小树更好？当然是一大堆巨型生命树！ （世界拥有更多且更大的生命树）",
+		"extraFloatingIslands": "你果然一直心在云端。 （世界拥有更多浮空岛）",
+		"errorWorld": "猫和狗混在一起，天下大乱！ （错误世界）",
+		"graveyardBloodmoonStart": "Klaatu Verata... 领带！ （世界遍布墓地，并在血月开始）",
+		"surfaceIsInSpace": "在太空里，没人能听见你的尖叫。 （地表层更高）",
+		"rainsForAYear": "你会需要一艘更大的船。 （世界下着永不停歇的雨）",
+		"biggerAbandonedHouses": "究竟是哪个失落文明建造了这一切？ （世界拥有更大的地下小屋）",
+		"randomSpawn": "我们到底降落到哪儿了？ （出生点位于随机位置）",
+		"addTeleporters": "走路是给输家准备的。 （世界各处散布着传送器）",
+		"startInHardmode": "所以，你选择了痛苦之路…… （世界开局即困难模式）",
+		"noInfection": "终于，我们找到解药了！ （世界初始没有腐化或猩红）",
+		"hallowOnTheSurface": "彩虹、小猫，还有死亡。 （世界地表为神圣地）",
+		"worldIsInfected": "我们现在可真是陷进麻烦里了。 （整个世界都被腐化或猩红感染）",
+		"surfaceIsMushrooms": "我听说松露人真是个有趣的家伙。 （世界地表为蘑菇地）",
+		"surfaceIsDesert": "像海滩，只是水少了很多。 （世界地表为沙漠）",
+		"pooEverywhere": "第6过道需要清理！ （世界遍布便便块）",
+		"noSpiderCaves": "八条腿实在太多了。 （世界没有蜘蛛洞）",
+		"actuallyNoTraps": "不，这次我们是认真的，保证！ （世界真的没有陷阱）",
+		"rainbowStuff": "ROY G BIV 来过这里。 （世界充满各种彩虹方块等内容）",
+		"digExtraHoles": "小心脚下！ （世界拥有更多裂隙与深坑）",
+		"roundLandmasses": "哇，它们看起来像一颗颗小行星！ （世界由小型星球块组成）",
+		"extraLiquid": "寻找亚特兰蒂斯之旅开始了！ （世界被大量液体淹没）",
+		"portalGunInChests": "测试结果出来了：‘你是个糟糕的人。’ （任意宝箱都可能生成传送枪）",
+		"worldIsFrozen": "总有人想在上坡路上滑冰。 （世界由冰雪构成）",
+		"halloweenGen": "现在只差一个玉米迷宫了。 （世界初始带有南瓜）",
+		"endlessHalloween": "不给糖就捣蛋！ （万圣节事件始终开启）",
+		"endlessChristmas": "来看看树下藏了什么吧…… （圣诞节事件始终开启）",
+		"vampirism": "你最好准备点 SPF9000 防晒霜。 （玩家会变成吸血鬼，务必远离阳光）",
+		"teamBasedSpawns": "别踏进我们的地盘！ （玩家出生点按队伍颜色区分）",
+		"dualDungeons": "买一送一的地牢冒险！ （世界拥有双地牢体验）"
 	},
 	"CaptureBiomeChoice": {
 		"0": "自动",
@@ -3692,6 +3729,7 @@
 		"Reddit": "Reddit",
 		"Instagram": "Instagram",
 		"Twitter": "Twitter",
+		"Bluesky": "Bluesky",
 		"Forums": "论坛",
 		"Merch": "商店",
 		"Wiki": "Wiki网站"
@@ -3710,7 +3748,8 @@
 		"11": "Pengolin",
 		"12": "Shuki9",
 		"13": "SLava_75",
-		"14": "da_karakum"
+		"14": "da_karakum",
+		"ru-RU-9": "Anasu Meruku"
 	},
 	"CreditsRollCategory_Dedication": {
 		"1": "谨此怀念 Jason Parker（1986—2023）",

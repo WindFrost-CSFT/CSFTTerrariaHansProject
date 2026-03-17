@@ -873,7 +873,22 @@
 		"PortraitMode_Detailed": "详细",
 		"PortraitMode_CloseUp": "关闭",
 		"PortraitMode_Retro": "怀旧",
-		"PortraitModeTitle": "NPC肖像样式:"
+		"PortraitModeTitle": "NPC肖像样式:",
+		"SignEditBlockedByPermissions": "由于设置、账号权限或平台限制，本多人会话中已隐藏用户生成文本。",
+		"NonRequiredControllerDisconnected": "请重新连接手柄，或使用其他任意输入方式继续。",
+		"NonRequiredControllerClose": "继续",
+		"SaveDataNewer": "此存档来自新版本。请先在此设备上更新游戏，再加载该存档。",
+		"SaveDataOlder": "此存档来自旧版本。加载后将升级为新版本，不再兼容你在其他设备上可能保留的旧版本游戏。",
+		"DashModeTitle": "向左/右冲刺：",
+		"ArmorSetAbilityModeTitle": "向下触发套装能力："
+	},
+	"DiscordPresence": {
+		"Menu": "在菜单中",
+		"Tutorial": "在教程中",
+		"SinglePlayer": "在单人游戏中",
+		"LocalMultiplayer": "在本地多人游戏中",
+		"OnlineMultiplayer": "在在线多人游戏中",
+		"CrossplayMultiplayer": "在跨平台多人游戏中"
 	},
 	"ProfileName": {
 		"Profile1": "全屏",
@@ -1050,7 +1065,9 @@
 		"Loadout2": "配装2",
 		"Loadout3": "配装3",
 		"LoadoutCycle": "切换配装",
-		"TakeOne": "拿走一个"
+		"TakeOne": "拿走一个",
+		"Dash": "冲刺",
+		"ArmorSetAbility": "套装能力"
 	},
 	"KeyboardMappings": {
 		"MovementAxis_X_0": "向左移动",
@@ -1103,7 +1120,9 @@
 		"Loadout1": "配装1",
 		"Loadout2": "配装2",
 		"Loadout3": "配装3",
-		"LoadoutCycle": "切换配装"
+		"LoadoutCycle": "切换配装",
+		"Dash": "冲刺",
+		"ArmorSetAbility": "套装能力"
 	},
 	"InterfaceProfiles": {
 		"Classic": "经典",
