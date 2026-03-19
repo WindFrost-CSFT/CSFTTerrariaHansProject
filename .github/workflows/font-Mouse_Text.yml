@@ -39,13 +39,7 @@ jobs:
           $workDir = Join-Path $env:GITHUB_WORKSPACE 'font_work'
           New-Item -ItemType Directory -Force -Path $workDir | Out-Null
           Copy-Item Font_Text/Mouse_Text/font.otf (Join-Path $workDir 'font.otf') -Force
-
-          $configContent = Get-Content backup_config/config.bmfc -Raw
-          $configContent = $configContent -replace 'fontName=.*', 'fontName=font'
-          $configContent = $configContent -replace 'fontFile=.*', 'fontFile=font.otf'
-          $configPath = Join-Path $workDir 'config.bmfc'
-          $ascii = [System.Text.Encoding]::ASCII
-          [System.IO.File]::WriteAllText($configPath, $configContent, $ascii)
+          Copy-Item backup_config/config.bmfc (Join-Path $workDir 'config.bmfc') -Force
 
       - name: Generate BMFont Files
         shell: pwsh
