@@ -1,0 +1,104 @@
+name: font-Mouse_Text
+
+on:
+  push:
+    branches:
+      - font_test
+    paths:
+      - 'backup_config/config.bmfc'
+      - 'Font_Text/Mouse_Text/**'
+      - 'scripts/**'
+      - '.github/workflows/font-Mouse_Text.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-font-mouse-text:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build XnaFontRebuilder
+        run: |
+          dotnet build scripts/XnaFontRebuilder/XnaFontRebuilder.csproj -c Release
+
+      - name: Prepare Font Work Directory
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path font_work | Out-Null
+          Copy-Item backup_config/config.bmfc font_work/config.bmfc -Force
+          Copy-Item Font_Text/Mouse_Text/font.otf font_work/font.otf -Force
+
+      - name: Generate BMFont Files
+        shell: pwsh
+        run: |
+          Push-Location font_work
+          & "$env:GITHUB_WORKSPACE/scripts/bmfont64.com" -c "$env:GITHUB_WORKSPACE/font_work/config.bmfc" -o "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.fnt"
+          Pop-Location
+
+      - name: Rename Texture Pages
+        shell: pwsh
+        run: |
+          $workDir = Join-Path $env:GITHUB_WORKSPACE 'font_work'
+          $prefix = 'Mouse_Text'
+          $files = Get-ChildItem -Path $workDir -Filter "$prefix`_*.png" | Sort-Object Name
+          if ($files.Count -eq 0) {
+            throw 'No generated texture pages found.'
+          }
+
+          foreach ($file in $files) {
+            if ($file.Name -match '^Mouse_Text_(\d+)\.png$') {
+              $index = [int]$matches[1] + 1
+              $target = Join-Path $workDir ("Mouse_Text_{0}_A.png" -f $index)
+              Rename-Item -Path $file.FullName -NewName ([System.IO.Path]::GetFileName($target)) -Force
+            }
+          }
+
+      - name: Export Mouse_Text txt
+        shell: pwsh
+        run: |
+          & "$env:GITHUB_WORKSPACE/scripts/XnaFontRebuilder/bin/Release/net8.0/XnaFontRebuilder.exe" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.fnt" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.txt" --line-height 30 --latin-compensation 0.5 --character-spacing-compensation 5
+
+      - name: Sync Generated Files To Font Directory
+        shell: pwsh
+        run: |
+          $targetDir = Join-Path $env:GITHUB_WORKSPACE 'Font/Mouse_Text'
+          New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
+          Get-ChildItem -Path $targetDir -Filter 'Mouse_Text_*_A.png' -ErrorAction SilentlyContinue | Remove-Item -Force
+          Copy-Item "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.txt" "$targetDir/Mouse_Text.txt" -Force
+          Get-ChildItem -Path "$env:GITHUB_WORKSPACE/font_work" -Filter 'Mouse_Text_*_A.png' | ForEach-Object {
+            Copy-Item $_.FullName $targetDir -Force
+          }
+
+      - name: Upload Font Outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mouse_Text-font-output
+          path: |
+            font_work/Mouse_Text.txt
+            font_work/Mouse_Text_*_A.png
+          retention-days: 30
+
+      - name: Commit Generated Font Files
+        shell: pwsh
+        run: |
+          git add Font/Mouse_Text/Mouse_Text.txt Font/Mouse_Text/Mouse_Text_*_A.png
+          $changes = git diff --cached --name-only
+          if (-not $changes) {
+            Write-Host 'No generated file changes to commit.'
+            exit 0
+          }
+
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Update Mouse_Text font outputs [skip ci]"
+          git push origin HEAD:${{ github.ref_name }}
