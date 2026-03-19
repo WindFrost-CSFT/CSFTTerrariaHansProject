@@ -41,10 +41,27 @@ jobs:
           Copy-Item Font_Text/Mouse_Text/font.otf font_work/font.otf -Force
 
       - name: Generate BMFont Files
-        shell: cmd
+        shell: pwsh
         run: |
-          cd /d "%GITHUB_WORKSPACE%\font_work"
-          "%GITHUB_WORKSPACE%\scripts\bmfont64.com" -c "%GITHUB_WORKSPACE%\font_work\config.bmfc" -o "%GITHUB_WORKSPACE%\font_work\Mouse_Text.fnt"
+          $workDir = Join-Path $env:GITHUB_WORKSPACE 'font_work'
+          $bmfont = Join-Path $env:GITHUB_WORKSPACE 'scripts/bmfont64.com'
+          $config = Join-Path $workDir 'config.bmfc'
+          $output = Join-Path $workDir 'Mouse_Text.fnt'
+
+          if (-not (Test-Path $bmfont)) { throw "BMFont executable not found: $bmfont" }
+          if (-not (Test-Path $config)) { throw "BMFont config not found: $config" }
+          if (-not (Test-Path (Join-Path $workDir 'font.otf'))) { throw "font.otf not found in $workDir" }
+
+          Push-Location $workDir
+          try {
+            $process = Start-Process -FilePath $bmfont -ArgumentList @('-c', $config, '-o', $output) -Wait -PassThru -NoNewWindow
+            if ($process.ExitCode -ne 0) {
+              throw "BMFont exited with code $($process.ExitCode)"
+            }
+          }
+          finally {
+            Pop-Location
+          }
 
       - name: Rename Texture Pages
         shell: pwsh
