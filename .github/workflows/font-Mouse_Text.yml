@@ -51,7 +51,7 @@ jobs:
         shell: pwsh
         run: |
           $workDir = Join-Path $env:GITHUB_WORKSPACE 'font_work'
-          $bmfont = Join-Path $env:GITHUB_WORKSPACE 'scripts/bmfont64.com'
+          $bmfont = Join-Path $env:GITHUB_WORKSPACE 'scripts/bmfont64.exe'
           $config = Join-Path $workDir 'config.bmfc'
           $output = Join-Path $workDir 'Mouse_Text.fnt'
 
@@ -61,7 +61,7 @@ jobs:
 
           Push-Location $workDir
           try {
-            $process = Start-Process -FilePath $bmfont -ArgumentList @('-c', $config, '-o', $output) -Wait -PassThru -NoNewWindow
+            $process = Start-Process -FilePath $bmfont -ArgumentList @('-c', $config, '-o', $output) -WorkingDirectory $workDir -Wait -PassThru -NoNewWindow
             if ($process.ExitCode -ne 0) {
               throw "BMFont exited with code $($process.ExitCode)"
             }
