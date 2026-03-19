@@ -1,4 +1,4 @@
-name: font-Mouse_Text
+name: Mouse_Text Font Creater
 
 on:
   push:
@@ -91,7 +91,7 @@ jobs:
       - name: Export Mouse_Text txt
         shell: pwsh
         run: |
-          & "$env:GITHUB_WORKSPACE/scripts/XnaFontRebuilder/bin/Release/net8.0/XnaFontRebuilder.exe" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.fnt" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.txt" --line-height 30 --latin-compensation 0.5 --character-spacing-compensation 5
+          & "$env:GITHUB_WORKSPACE/scripts/XnaFontRebuilder/bin/Release/net8.0/XnaFontRebuilder.exe" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.fnt" "$env:GITHUB_WORKSPACE/font_work/Mouse_Text.txt" --line-height 27 --latin-compensation 0.5 --character-spacing-compensation 0.5
 
       - name: Sync Generated Files To Font Directory
         shell: pwsh
