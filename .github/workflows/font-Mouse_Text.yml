@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - font_test
+      - lolita_font
     paths:
       - 'backup_config/config.bmfc'
       - 'Font_Text/Mouse_Text/**'
