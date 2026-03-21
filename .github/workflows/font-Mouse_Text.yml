@@ -42,6 +42,36 @@ jobs:
           Copy-Item Font_Text/Mouse_Text/font.ttf (Join-Path $workDir 'font.ttf') -Force
           Copy-Item backup_config/config.bmfc (Join-Path $workDir 'config.bmfc') -Force
 
+      - name: Install Mouse_Text Font
+        shell: pwsh
+        run: |
+          $fontSource = Join-Path $env:GITHUB_WORKSPACE 'Font_Text/Mouse_Text/font.ttf'
+          $fontDir = Join-Path $env:LOCALAPPDATA 'Microsoft/Windows/Fonts'
+          $fontTarget = Join-Path $fontDir 'font.ttf'
+
+          if (-not (Test-Path $fontSource)) {
+            throw "Font source not found: $fontSource"
+          }
+
+          New-Item -ItemType Directory -Force -Path $fontDir | Out-Null
+          Copy-Item $fontSource $fontTarget -Force
+
+          $fontRegPath = 'HKCU:\Software\Microsoft\Windows NT\CurrentVersion\Fonts'
+          New-Item -Path $fontRegPath -Force | Out-Null
+          New-ItemProperty -Path $fontRegPath -Name 'Heiti TC (TrueType)' -Value $fontTarget -PropertyType String -Force | Out-Null
+
+          Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition @'
+          [System.Runtime.InteropServices.DllImport("gdi32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode)]
+          public static extern int AddFontResource(string lpFileName);
+
+          [System.Runtime.InteropServices.DllImport("user32.dll", SetLastError = true)]
+          public static extern System.IntPtr SendMessageTimeout(System.IntPtr hWnd, uint Msg, System.UIntPtr wParam, string lParam, uint fuFlags, uint uTimeout, out System.UIntPtr lpdwResult);
+          '@
+
+          [void][Win32.NativeMethods]::AddFontResource($fontTarget)
+          $result = [System.UIntPtr]::Zero
+          [void][Win32.NativeMethods]::SendMessageTimeout([System.IntPtr]0xffff, 0x001D, [System.UIntPtr]::Zero, $null, 0x0002, 1000, [ref]$result)
+
       - name: Generate BMFont Files
         shell: pwsh
         run: |
