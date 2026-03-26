@@ -6363,7 +6363,9 @@
     "PalworldPetChillet": "疾旋鼬",
     "PalworldPetChilletIgnis": "桃旋鼬",
     "PalworldDigtoise": "碎岩龟",
-    "PalworldChilletEgg": "巨型龙蛋"
+    "PalworldChilletEgg": "巨型龙蛋",
+    "MusicBoxRainbowBoulder": "音乐盒（彩虹巨石）",
+    "MusicBoxSilence": "音乐盒（静寂）"
   },
   "ItemTooltip": {
     "ShadowGreaves": "暴击率增加5%\n在微光中嬗变为[i:958]",
@@ -6532,7 +6534,7 @@
     "BubbleMachine": "吹泡泡",
     "BubbleWand": "吹泡泡",
     "WaterCandle": "持此物可能会引起不必要的注意",
-    "Book": "{$CommonItemTooltip.PlacementStyle}",
+    "Book": "{$CommonItemTooltip.PlacementStyle}\n“里面满是奇怪的符号”",
     "CopperWatch": "报时",
     "SpectreRobe": "魔法伤害和暴击率各增加7%",
     "SpectrePants": "魔法伤害增加8%\n移动速度提高8%",
@@ -7057,7 +7059,7 @@
     "DayBreak": "“用光明之矛将敌人四分五裂！”",
     "DemonCampfire": "靠近篝火时生命再生增加\n在微光中嬗变为[i:5357]",
     "DemonHeart": "永久增加配饰栏数量",
-    "Detonator": "{$CommonItemTooltip.WireTrigger}",
+    "Detonator": "{$CommonItemTooltip.WireTrigger}\n“血肉横飞！”",
     "DevDye": "{$CommonItemTooltip.DevItem}",
     "DjinnsCurse": "允许用双脚换取缓慢坠落的效果",
     "DPSMeter": "显示你的每秒伤害",
@@ -8635,7 +8637,7 @@
     "Poulder": "“我随心所欲”",
     "SuperFertilizer": "“它满足了植物的渴求！”",
     "BoulderPet": "召唤友好的巨石跟随你滚动\n“让我们摇滚起来吧！”\n在微光中嬗变为[i:5654]",
-    "ChlorophyteVisor": "仆从数量上限提高1个\n召唤伤害增加12%\n是[i:4873]防御的两倍\n而且丑的一笔（划掉）",
+    "ChlorophyteVisor": "仆从数量上限提高1个\n召唤伤害增加16%\n是[i:4873]防御的两倍\n而且丑的一笔（划掉）",
     "FlaironFlail": "喷出自动寻的泡泡\n<switchmode>",
     "OfSeaAndDreams": "{$PaintingArtist.Gejdel}",
     "TheRunicPixie": "{$PaintingArtist.Egdom}",

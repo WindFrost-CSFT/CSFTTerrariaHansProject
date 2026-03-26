@@ -1565,7 +1565,7 @@
 		"Rain1": "Yes, I can go out in the rain and not melt. I'm a wizard, dammit!",
 		"Rain2": "Raindrops falling on my... uh.. Where am I? Who are you? ... Who am I?",
 		"LuckIsCursed1": "Stay away! You are dragging a behemoth of woeful bad luck in your wake! I want nothing of it!!",
-		"LuckIsCursed2": "Did you smash every mirror in WorldName!? You hapless fool, you are cursed beyond help!!",
+		"LuckIsCursed2": "Did you smash every mirror in {WorldName}!? You hapless fool, you are cursed beyond help!!",
 		"LuckIsTerrible1": "I feel a terrible fate surrounding you! You should just stay in bed today!",
 		"LuckIsTerrible2": "What manner of salt did you spill to receive such misfortune!?",
 		"LuckIsPoor1": "Negative energy is seeping from your pores. I wouldn't take any chances today.",

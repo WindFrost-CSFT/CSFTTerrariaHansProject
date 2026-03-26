@@ -6365,7 +6365,9 @@
 		"PalworldPetChilletIgnis": "Chillet Ignis",
 		"PalworldDigtoise": "Digtoise",
 		"PalworldChilletEgg": "Huge Dragon Egg",
-		"MusicBoxSkeletron": "Music Box (Skeletron)"
+		"MusicBoxSkeletron": "Music Box (Skeletron)",
+		"MusicBoxRainbowBoulder": "Music Box (Rainbow Boulder)",
+		"MusicBoxSilence": "Music Box (Silence)"
 	},
 	"ItemTooltip": {
 		"ShadowGreaves": "5% increased critical strike chance",
@@ -6534,7 +6536,7 @@
 		"BubbleMachine": "Blows bubbles",
 		"BubbleWand": "Blows bubbles",
 		"WaterCandle": "Holding this may attract unwanted attention",
-		"Book": "{$CommonItemTooltip.PlacementStyle}",
+		"Book": "{$CommonItemTooltip.PlacementStyle}\n'It contains strange symbols'",
 		"CopperWatch": "Tells the time",
 		"SpectreRobe": "7% increased magic damage and critical strike chance",
 		"SpectrePants": "8% increased magic damage\n8% increased movement speed",
@@ -8636,7 +8638,7 @@
 		"Poulder": "'I do what I want'",
 		"SuperFertilizer": "Causes saplings to instantly grow into taller trees\n'It’s got what plants crave!'",
 		"BoulderPet": "Summons a friendly boulder to roll after you\n'Let's rock n' roll!'",
-		"ChlorophyteVisor": "Increases your max number of minions by 1\nIncreases summon damage by 12%",
+		"ChlorophyteVisor": "Increases your max number of minions by 1\nIncreases summon damage by 16%",
 		"FlaironFlail": "Spews homing bubbles\n<switchmode>",
 		"OfSeaAndDreams": "{$PaintingArtist.Gejdel}",
 		"TheRunicPixie": "{$PaintingArtist.Egdom}",
@@ -8948,7 +8950,7 @@
 		"LogicSensor_Water": "Signals when water starts or stops touching it",
 		"Switch": "{$CommonItemTooltip.WireTrigger}",
 		"Lever": "{$CommonItemTooltip.WireTrigger}",
-		"Detonator": "{$CommonItemTooltip.WireTrigger}",
+		"Detonator": "{$CommonItemTooltip.WireTrigger}\n'Guts... and Gory!'",
 		"GrayPressurePlate": "Signals when stepped on by a player",
 		"BrownPressurePlate": "Signals when stepped on by a player",
 		"BluePressurePlate": "Signals when stepped on by a player",

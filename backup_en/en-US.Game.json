@@ -2276,7 +2276,7 @@
 		"WindEast": "East",
 		"ResearchButtonTooltip": "Fully researched items can be created freely",
 		"Sort_SortingID": "By ID",
-		"Sort_PlacableObjects": "Placable Objects",
+		"Sort_PlaceableObjects": "Placeable Objects",
 		"Sort_Walls": "Walls",
 		"Sort_Blocks": "Blocks",
 		"Sort_Alphabetical": "Name",

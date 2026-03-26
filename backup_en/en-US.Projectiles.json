@@ -1006,6 +1006,10 @@
 		"ObsidianFire": "Obsidian Fire",
 		"ObsidianFire2": "{$ProjectileName.ObsidianFire}",
 		"ObsidianFire3": "{$ProjectileName.ObsidianFire}",
-		"SkyDragonsFuryElectrosphere": "{$ProjectileName.Electrosphere}"
+		"SkyDragonsFuryElectrosphere": "{$ProjectileName.Electrosphere}",
+		"PalworldMinionCattiva": "Cattiva",
+		"PalworldMinionFoxsparks": "Foxparks",
+		"PalworldMinionFoxsparksFlames": "Foxparks' Flames",
+		"PalworldMinionFoxsparksFireball": "Foxparks' Fireball"
 	}
 }
