@@ -2,8 +2,8 @@
 fileVersion=1
 
 # font settings
-fontName=思源黑体 CN
-fontFile=font.otf
+fontName=Xiaolai
+fontFile=font.ttf
 charSet=0
 fontSize=25
 aa=4

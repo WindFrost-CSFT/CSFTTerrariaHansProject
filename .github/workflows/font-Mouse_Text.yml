@@ -38,7 +38,7 @@ jobs:
         run: |
           $workDir = Join-Path $env:GITHUB_WORKSPACE 'font_work'
           New-Item -ItemType Directory -Force -Path $workDir | Out-Null
-          Copy-Item Font_Text/Mouse_Text/font.otf (Join-Path $workDir 'font.otf') -Force
+          Copy-Item Font_Text/Mouse_Text/font.ttf (Join-Path $workDir 'font.ttf') -Force
           Copy-Item backup_config/config.bmfc (Join-Path $workDir 'config.bmfc') -Force
 
       - name: Generate BMFont Files
@@ -51,7 +51,7 @@ jobs:
 
           if (-not (Test-Path $bmfont)) { throw "BMFont executable not found: $bmfont" }
           if (-not (Test-Path $config)) { throw "BMFont config not found: $config" }
-          if (-not (Test-Path (Join-Path $workDir 'font.otf'))) { throw "font.otf not found in $workDir" }
+          if (-not (Test-Path (Join-Path $workDir 'font.ttf'))) { throw "font.ttf not found in $workDir" }
 
           Push-Location $workDir
           try {
