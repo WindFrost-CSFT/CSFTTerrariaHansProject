@@ -6933,7 +6933,7 @@
     "FrozenWings": "{$CommonItemTooltip.FlightAndSlowfall}\n飞行时间：2.17s\n飞行高度：67\n最大水平速度：35mph\n水平加速倍率：1\n垂直倍率：1.5",
     "GhostWings": "{$CommonItemTooltip.FlightAndSlowfall}\n飞行时间：2.83s\n飞行高度：94\n最大水平速度：38mph\n水平加速倍率：1\n垂直倍率：1.66",
     "LivingWoodWand": "放置生命木\n在微光中嬗变为[i:4281]",
-    "GrapplingHook": "“给我过来！”\n{$CommonItemTooltip.Hook}\n钩爪射程：18.75",
+    "GrapplingHook": "“给我过来！”\n{$CommonItemTooltip.Hook}\n射程：18.75",
     "Chain": "可供攀爬",
     "BlueWrench": "放置蓝电线",
     "GreenWrench": "放置绿电线",
