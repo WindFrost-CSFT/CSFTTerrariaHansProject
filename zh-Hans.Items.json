@@ -1049,7 +1049,7 @@
     "PumpkinWall": "南瓜墙",
     "Hay": "干草",
     "HayWall": "干草墙",
-    "SpookyWood": "阴森木",
+    "SpookyWood": "阴森木\n[i:1729]*200=[i:1832]\n[i:1729]*300=[i:1833]\n[i:1729]*250=[i:1834]",
     "Obsidian": "黑曜石",
     "SpookyWoodWall": "阴森木墙",
     "PumpkinHelmet": "南瓜头盔",
