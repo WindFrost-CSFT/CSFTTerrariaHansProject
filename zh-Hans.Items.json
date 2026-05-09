@@ -6368,6 +6368,7 @@
     "MusicBoxSilence": "音乐盒（静寂）"
   },
   "ItemTooltip": {
+    "Daybloom": "太阳花会在白天期间（上午 4:30 至 下午 7:29）开花",
     "ShadowGreaves": "暴击率增加5%\n在微光中嬗变为[i:958]",
     "ConfettiGun": "到处喷射彩纸！\n“让派对开始吧！”",
     "ChlorophyteMask": "近战伤害增加16%\n近战暴击率增加6%",
@@ -6667,7 +6668,7 @@
     "JungleRose": "“美，太美了”",
     "FeralClaws": "近战速度提高12%\n为近战武器启用自动摆动",
     "AnkletoftheWind": "+10%移动速度\n可用于合成[i:898]",
-    "StaffofRegrowth": "让泥土上长出草\n用它收集时，可提高炼金植物收集速度",
+    "StaffofRegrowth": "让泥土长出草\n可以提高草药与其种子的产量\n种植盆中的草药时会自动重新种植它们\n[i:313]在白天(上午4:30至下午7:29)开花\n[i:314]在夜间(下午7:30至上午4:29)开花\n[i:315]全天随机开花或不开花\n[i:317]在下雨时开花\n[i:316]在满月或血月开花\n[i:318]在日落(下午3:45至下午7:30)且不下雨时开花\n[i:2358]会随机永久开花"
     "WhoopieCushion": "“可能会惹恼别人”\n在微光中嬗变为[i:5346]",
     "HeavyWorkBench": "用于制作新奇的装饰品",
     "AmmoBox": "{$CommonItemTooltip.UseableWhenPlaced}\n{$BuffDescription.AmmoBox}",
@@ -8466,7 +8467,7 @@
     "PrincessStyle": "{$PaintingArtist.Yorai}",
     "PlacePainting": "{$PaintingArtist.TerrariaCommunity}",
     "DontHurtComboBook": "放在物品栏中能避免误伤小动物\n放在物品栏中能避免不小心破坏周遭环境\n<interact>可暂时停用",
-    "AcornAxe": "让泥土上长出草\n用它收集时可增加炼金植物收集速度\n砍树时种橡子\n在微光中嬗变为[i:5519]",
+    "AcornAxe": "砍树时种橡子\n让泥土长出草\n可以提高草药与其种子的产量\n种植盆中的草药时会自动重新种植它们\n[i:313]在白天(上午4:30至下午7:29)开花\n[i:314]在夜间(下午7:30至上午4:29)开花\n[i:315]全天随机开花或不开花\n[i:317]在下雨时开花\n[i:316]在满月或血月开花\n[i:318]在日落(下午3:45至下午7:30)且不下雨时开花\n[i:2358]会随机永久开花\n在微光中嬗变为[i:5519]",
     "ArtisanLoaf": "食用后可永久增加制作站范围\n“曾经让泰迪想家的传奇面包”",
     "ShadowCandle": "废弃城镇的和平利益",
     "TNTBarrel": "高度挥发",
