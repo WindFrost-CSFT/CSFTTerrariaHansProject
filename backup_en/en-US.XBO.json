@@ -12,6 +12,6 @@
 		"ControllerMappingsMenu": "Controller Settings",
 	},
 	"Tutorial": {
-		"OpenSettings": "The [cm:15]Settings menu has an array of options to allow you to customize the game especially for your playstyle. If you find it hard to see the Inventory, you can Edit the Layout from the Interface tab and adjust nearly everything about the interface. You can also change all your button bindings in the Controller tab and Edit Controller Bindings.",
+		"OpenSettings": "The [cm:15] Settings menu has an array of options to allow you to customize the game especially for your playstyle. If you find it hard to see the Inventory, you can Edit the Layout from the Interface tab and adjust nearly everything about the interface. You can also change all your button bindings in the Controller tab and Edit Controller Bindings.",
 	}
 }

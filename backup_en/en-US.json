@@ -164,7 +164,7 @@
 		"Normal": "Classic",
 		"Creative": "Journey",
 		"CreativeDescriptionPlayer": "Journey characters start with extra equipment. Can only be played on Journey worlds.",
-		"WorldSizeFormat": "{0} World",
+		"WorldSizeFormat": "{0}",
 		"WorldCreatedFormat": "Created: {0}",
 		"SelectWorld": "Select World",
 		"SelectPlayer": "Select Player",
@@ -253,6 +253,9 @@
 		"WorldCreationNumberOfWorlds": "# of Worlds:",
 		"WorldCreationNumberOfWorldsDescription": "Number of worlds to generate at once",
 		"ItemCannotBePlacedInsideItself": "Placing into itself will be blocked",
+		"ItemLoadoutShared": "Shared with other loadouts",
+		"ItemLoadoutShareHint": "<share> to share across loadouts",
+		"ItemLoadoutSharedFrom": "Shared from loadout {0}",
 		"WorldDescriptionName": "Give your world a name! You can always change it later if needed!",
 		"WorldDescriptionSeed": "The DNA marker that defines your world's specific shape and traits.",
 		"WorldDescriptionSizeSmall": "Ideal for a quick, single player experience.",
@@ -401,7 +404,30 @@
 		"SwitchPage": "Switch Page",
 		"HousingAssign": "Assign {0}",
 		"HousingEvict": "Evict {0}",
-		"HousingAim": "Aim"
+		"HousingAim": "Aim",
+		"PortraitsDetailed": "Portraits Style: Detailed",
+		"PortraitsCloseUp": "Portraits Style: Profile",
+		"PortraitsFullBody": "Portraits Style: Retro",
+		"PortraitsDisabled": "Portraits Style: Disabled",
+		"FlashyEffectsWorldOn": "Thunder Effects: On",
+		"FlashyEffectsWorldOff": "Thunder Effects: Reduced",
+		"FlashyEffectsInterfaceOn": "Inventory Effects: On",
+		"FlashyEffectsInterfaceOff": "Inventory Effects: Reduced",
+		"PlayWhenUnfocusedOn": "Pause When Unfocused: Off",
+		"PlayWhenUnfocusedOff": "Pause When Unfocused: On",
+		"DoubleTapDash": "Double Tap Dashing",
+		"Dash": "Dash",
+		"ToggleClassicGrid": "Crafting Window Style",
+		"PreviousLoadout": "Previous Loadout",
+		"NextLoadout": "Next Loadout",
+		"ArmorSetAbility": "Armor Set Ability",
+		"PanControlMode": "Forward Zoom",
+		"PanControlMode_OnAlways": "Always On",
+		"PanControlMode_OffAlways": "Always Off",
+		"PanControlMode_Click": "Click to Toggle",
+		"PanControlMode_Hold": "Hold to Use",
+		"LookAheadGamepadInstruction": "Zoom",
+		"Digtoise": "Digtoise"
 	},
 	"SecretSeedDescription": {
 		"paintEverythingGray": "Journey back to a more simple time, without all of those pesky colors! (World is painted gray)",
@@ -438,7 +464,9 @@
 		"endlessChristmas": "Let's see what is under the tree... (Christmas event always active)",
 		"vampirism": "You are going to need some SPF9000. (Player is a Vampire - avoid the sun at all costs)",
 		"teamBasedSpawns": "Stay off of our turf! (Player spawns are specific to team colors)",
-		"dualDungeons": "Buy one Dungeon, get one free! (A dungeon crawling experience)"
+		"dualDungeons": "Buy one Dungeon, get one free! (A dungeon crawling experience)",
+		"moreLightning": "Zeus is displeased (More lightning strikes)",
+		"noLightning": "Zeus is appeased (Disables lightning strikes)"
 	},
 	"CaptureBiomeChoice": {
 		"0": "Automatic",
@@ -585,7 +613,8 @@
 		"CannotTeleportToPylonBecauseNotEnoughNPCsAtCurrentPylon": "There are not enough villagers living near the current pylon",
 		"CannotTeleportToPylonBecauseThereIsDanger": "Defeat the current threat before you can use the pylon network!",
 		"CannotTeleportToPylonBecauseNotMeetingBiomeRequirements": "This pylon is not in the correct biome to use",
-		"CannotTeleportToPylonBecauseAccessingLihzahrdTempleEarly": "Ancient forces prevent you from accessing this location..."
+		"CannotTeleportToPylonBecauseAccessingLihzahrdTempleEarly": "Ancient forces prevent you from accessing this location...",
+		"SteamHostOnlyAllowsFriends": "Only the host's steam friends may enter this server"
 	},
 	"GameUI": {
 		"Storm": "Storm",
@@ -655,6 +684,7 @@
 		"BaitPower": "{0}% bait power",
 		"HairStyle": "Hair Style",
 		"CraftingWindow": "Crafting Window",
+		"NotEnoughMaterials": "Not enough materials",
 		"CraftFromNearbyChestsOn": "Craft from nearby chests (On)",
 		"CraftFromNearbyChestsOff": "Craft from nearby chests (Off)",
 		"QuickStackToNearby": "Quick Stack to Nearby Chests",
@@ -735,7 +765,7 @@
 		"Joining": "Joining..."
 	},
 	"Game": {
-		"Wave": "Wave: {0}",
+		"Wave": "Wave {0}",
 		"FirstWave": "First Wave",
 		"FinalWave": "Final Wave",
 		"InvasionWave_Type1": "{0}: {1}",
@@ -899,6 +929,7 @@
 		"Suffocated_1": "{0} couldn't breathe.",
 		"Suffocated_2": "{0} was buried alive.",
 		"Poisoned": "{0} couldn't find the antidote.",
+		"Spored": "{0} succumbed to the spores.",
 		"Burned_1": "{0} couldn't put the fire out.",
 		"Burned_2": "{0} was reduced to charcoal.",
 		"Burned_3": "{0} was burnt to a crisp.",
@@ -1009,7 +1040,8 @@
 		"Gold": "Gold",
 		"Silver": "Silver",
 		"Copper": "Copper",
-		"DefenderMedals": "Defender Medals"
+		"DefenderMedals": "Defender Medals",
+		"DefenderMedals_PriceText": "defender medals"
 	},
 	"Achievements": {
 		"ChallengerCategory": "Challenger",

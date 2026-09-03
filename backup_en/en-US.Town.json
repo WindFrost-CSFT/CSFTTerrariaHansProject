@@ -2204,7 +2204,7 @@
 		"LikeNPC": "{NPCName} attempts to treat me favorably like another human. It appears I appreciate that.",
 		"LoveNPC": "I love being around {NPCName}.",
 		"DislikeNPC": "{NPCName} does not comprehend my existence, for it deviates from the norm. Unusual. The negative feeling is mutual.",
-		"HateNPC": "{NPCName}'s functions cannot be scientifically analyzed. Neutral functions overloaded. Translation: I hate this.",
+		"HateNPC": "{NPCName}'s functions cannot be scientifically analyzed. Neural functions overloaded. Translation: I hate this.",
 		"LikeNPC_Princess": "{NPCName} analyzed: Most wholesome carbon lifeform ever recorded."
 	},
 	"TownNPCMood_SantaClaus": {

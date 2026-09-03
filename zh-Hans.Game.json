@@ -979,7 +979,19 @@
     "PalworldMinionCattiva": "捣蛋猫",
     "PalworldPetChillet": "疾旋鼬",
     "PalworldPetChilletIgnis": "桃旋鼬",
-    "Kite": "放飞心灵"
+    "Kite": "放飞心灵",
+    "PalworldMinionTrustyFoxsparks": "可靠的火绒狐",
+    "PalworldMinionTrustyCattiva": "可靠的捣蛋猫",
+    "PalworldMountTrustyChillet": "可靠的疾旋鼬",
+    "PalworldMountTrustyChilletIgnis": "可靠的疾旋火鼬",
+    "PotentAcid": "烈性酸液",
+    "ManaHeat": "魔力涌动",
+    "ClayPotMinion": "黏土蓓蕾",
+    "ChlorophyteSpore": "孢子侵染",
+    "AcceleratePoisons": "加速负面效果",
+    "ForbiddenMinion": "禁戒遗迹",
+    "BlueLightning": "电击",
+    "RedLightning": "电击"
   },
   "BuffDescription": {
     "ObsidianSkin": "对熔岩免疫",
@@ -1321,7 +1333,20 @@
     "PalworldMinionCattiva": "捣蛋猫将为你而战",
     "PalworldPetChillet": "疾旋鼬将陪你一起探索,它跑起来相当威猛！",
     "PalworldPetChilletIgnis": "桃旋鼬将陪你一起探索!小心别抚摸它太长时间，否则火花将会开始飞舞！",
-    "Kite": "略微提高的移动速度、挖矿速度和放置速度"
+    "Kite": "略微提高的移动速度、挖矿速度和放置速度",
+    "PalworldMinionTrustyFoxsparks": "火绒狐将为你而战",
+    "PalworldMinionTrustyCattiva": "捣蛋猫将为你而战",
+    "PalworldMountTrustyChillet": "疾旋鼬将陪你一起探索\n它跑起来相当威猛！",
+    "PalworldMountTrustyChilletIgnis": "疾旋火鼬将陪你一起探索\n小心别抚摸它太长时间，否则火花将会开始飞舞！",
+    "PotentAcid": "正在损失生命值",
+    "ManaHeat": "魔法伤害提高",
+    "ManaSickness2": "无法再使用魔力恢复物品",
+    "ClayPotMinion": "黏土蓓蕾将为你而战",
+    "ChlorophyteSpore": "正在损失生命值",
+    "AcceleratePoisons": "增强中毒效果",
+    "ForbiddenMinion": "禁戒遗迹将为你而战",
+    "BlueLightning": "你感到一阵刺痛",
+    "RedLightning": "你感到一阵刺痛"
   },
   "ArmorSetBonus": {
     "SquireTier3": "哨兵数量上限增加1\n大幅提升弩车效力",
@@ -2280,7 +2305,8 @@
     "Sort_Walls": "墙壁",
     "Sort_Blocks": "物块",
     "Sort_Alphabetical": "名称",
-    "CantUsePowerBecauseOfNoPermissionFromServer": "你无权使用此能力"
+    "CantUsePowerBecauseOfNoPermissionFromServer": "你无权使用此能力",
+    "Sort_PlaceableObjects": "可放置物体"
   },
   "LucyTheAxe_Idle": {
     "1": "嘿！砍些树吧！",
