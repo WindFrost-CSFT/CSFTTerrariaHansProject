@@ -1,0 +1,14 @@
+{
+	"Announcement": {
+		"HasBeenDefeated_Plural": "{0}走咯！",
+		"HasBeenDefeated_Single": "{0}走咯！",
+		"HasAwoken": "{0}来咯！",
+		"HasArrived": "{0}已苏醒！"
+	},
+	"ArmorSetBonus": {
+		"ObsidianOutlaw": "\n免疫火块",
+	},
+		"BuffName": {
+			"Sunflower": "一腔热血！！！"
+		}
+	}

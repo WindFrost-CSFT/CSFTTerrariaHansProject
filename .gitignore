@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# yinyi build artefacts
+tools/yinyi/last-build-report.json
+tools/yinyi/__pycache__/
+
 # User-specific files
 *.rsuser
 *.suo

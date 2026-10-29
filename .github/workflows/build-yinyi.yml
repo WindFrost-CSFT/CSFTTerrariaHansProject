@@ -1,0 +1,140 @@
+name: Build data.unity3d (yinyi)
+
+on:
+  push:
+    branches:
+      - yinyi-zh-translit
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+        
+      - name: Prepare Work Directory
+        run: |
+          New-Item -ItemType Directory -Force -Path work
+          New-Item -ItemType Directory -Force -Path import
+          New-Item -ItemType Directory -Force -Path export
+          
+      - name: Prepare Localization Files
+        run: |
+          Get-ChildItem -Filter zh-Hans*.json | ForEach-Object { Copy-Item $_.FullName -Destination work\ }
+          
+          Get-ChildItem -Path Font -Directory | ForEach-Object {
+            if ($_.Name -ne "Trash") {
+              Get-ChildItem -Path $_.FullName -File | ForEach-Object {
+                Copy-Item $_.FullName -Destination "work\"
+              }
+            }
+          }
+          
+          @("backup_en", "backup_else") | ForEach-Object {
+            if (Test-Path $_) {
+              Get-ChildItem -Path $_ -File | ForEach-Object {
+                Copy-Item $_.FullName -Destination work\
+              }
+            }
+          }
+          
+      - name: Apply Yinyi Language Slots
+        run: |
+          # 音译版占用 ja-JP 语言槽位，最后覆盖，保证 ja-JP.* 全部生效
+          foreach ($extra in @("yinyi-extra", "haiban-extra")) {
+            if (Test-Path $extra) {
+              Get-ChildItem -Path $extra -Filter *.json -File | ForEach-Object {
+                Copy-Item $_.FullName -Destination work\ -Force
+              }
+            }
+          }
+
+      - name: Download Origin File from Release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const releases = await github.rest.repos.listReleases({
+              owner: 'WindFrost-CSFT',
+              repo: 'CSFTTerrariaHansProject'
+            });
+            const release = releases.data.find(r => r.tag_name === 'workflow-release');
+            if (!release) {
+              core.setFailed('Release not found.');
+              return;
+            }
+            
+            const assets = await github.rest.repos.listReleaseAssets({
+              owner: 'WindFrost-CSFT',
+              repo: 'CSFTTerrariaHansProject',
+              release_id: release.id
+            });
+            
+            const asset = assets.data.find(a => a.name === 'data.unity3d.origin');
+            if (!asset) {
+              core.setFailed('Origin file not found in release.');
+              return;
+            }
+            
+            const fs = require('fs');
+            const response = await fetch(asset.browser_download_url);
+            const buffer = await response.arrayBuffer();
+            fs.writeFileSync('data.unity3d.origin', Buffer.from(buffer));
+            console.log('Downloaded origin file');
+            
+      - name: Download Unpack Tool from Release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const releases = await github.rest.repos.listReleases({
+              owner: 'Cjx8848',
+              repo: 'UnpackTerrariaTextAsset'
+            });
+            
+            if (releases.data.length === 0) {
+              core.setFailed('UnpackTerrariaTextAsset release not found.');
+              return;
+            }
+            
+            const latestRelease = releases.data[0];
+            const assets = await github.rest.repos.listReleaseAssets({
+              owner: 'Cjx8848',
+              repo: 'UnpackTerrariaTextAsset',
+              release_id: latestRelease.id
+            });
+            
+            const zipAsset = assets.data.find(a => a.name.endsWith('.zip'));
+            if (!zipAsset) {
+              core.setFailed('Unpack tool zip not found in release.');
+              return;
+            }
+            
+            const fs = require('fs');
+            const response = await fetch(zipAsset.browser_download_url);
+            const buffer = await response.arrayBuffer();
+            fs.writeFileSync('unpack_tool.zip', Buffer.from(buffer));
+            console.log('Downloaded unpack tool');
+            
+      - name: Extract and Run Unpack Tool
+        run: |
+          Expand-Archive -Force unpack_tool.zip -DestinationPath unpack_tool
+          New-Item -ItemType Directory -Force -Path unpack_tool\work
+          New-Item -ItemType Directory -Force -Path unpack_tool\import
+          New-Item -ItemType Directory -Force -Path unpack_tool\export
+          Copy-Item -Path work\* -Destination unpack_tool\work\ -Recurse -Force
+          Copy-Item -Path backup_config\config.json -Destination unpack_tool\config.json -Force
+          Copy-Item -Path data.unity3d.origin -Destination unpack_tool\data.unity3d.origin -Force
+          Write-Host "=== Work directory files ==="
+          Get-ChildItem -Path unpack_tool\work -Recurse | Select-Object FullName
+          cd unpack_tool
+          .\UnpackTerrariaTextAsset.exe -autowork
+          Write-Host "=== Output file size ==="
+          Get-Item data.unity3d | Select-Object Name, Length
+          
+      - name: Upload Output as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yinyi-result
+          path: unpack_tool/data.unity3d
+          retention-days: 30
