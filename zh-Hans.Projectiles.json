@@ -1035,6 +1035,7 @@
     "SnappingStoneMeleeEffect": "{$ItemName.Pyroclast}",
     "SnappingStoneSummonEffect": "{$ItemName.ArmletOfRuin}",
     "CascadeExplosion": "喷流球",
-    "TheEyeOfCthulhuDash": "{$ItemName.TheEyeOfCthulhu}"
+    "TheEyeOfCthulhuDash": "{$ItemName.TheEyeOfCthulhu}",
+    "TrapBomb": "{$ProjectileName.Bomb}"
   }
 }
