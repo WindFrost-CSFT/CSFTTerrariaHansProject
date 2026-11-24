@@ -427,7 +427,35 @@
 		"PanControlMode_Click": "Click to Toggle",
 		"PanControlMode_Hold": "Hold to Use",
 		"LookAheadGamepadInstruction": "Zoom",
-		"Digtoise": "Digtoise"
+		"Digtoise": "Digtoise",
+		"LobbyCategoryJoin": "Join",
+		"LobbyCategoryHost": "Host",
+		"SearchingFriends": "Searching for friends' hosted sessions...",
+		"SearchingLAN": "Searching for local crossplay sessions...",
+		"ServerHeaderFriends": "Friends",
+		"ServerHeaderLAN": "Local",
+		"ServerHeaderDedicated": "Servers",
+		"DedicatedMissing": "Connect to remote crossplay sessions...",
+		"Connect": "Add Server",
+		"Join": "Join",
+		"EditRemote": "Edit",
+		"EditRemoteTitle": "Edit Server",
+		"ConnectionServerIP": "Address:",
+		"ConnectionEnterServerIP": "Enter the IP address or URL...",
+		"ConnectionServerPort": "Port:",
+		"ConnectionEnterServerPort": "Enter the port...",
+		"ConnectionPassword": "Password:",
+		"ConnectionPasswordEmpty": "None",
+		"ConnectionRemember": "Remember:",
+		"HostOptionsTitle": "Host",
+		"HostOptionsSteamMultiplayer": "Steam Multiplayer:",
+		"HostOptionsAllowedUsers": "Allowed Users:",
+		"HostOptionsAllowedUsers_Friends": "Friends",
+		"HostOptionsAllowedUsers_InviteOnly": "Invite Only",
+		"HostOptionsFriendsOfFriends": "Friends Of Friends:",
+		"HostOptionsFriendsCanInvite": "Friends Can Invite:",
+		"Show": "Show",
+		"Hide": "Hide"
 	},
 	"SecretSeedDescription": {
 		"paintEverythingGray": "Journey back to a more simple time, without all of those pesky colors! (World is painted gray)",
@@ -466,7 +494,8 @@
 		"teamBasedSpawns": "Stay off of our turf! (Player spawns are specific to team colors)",
 		"dualDungeons": "Buy one Dungeon, get one free! (A dungeon crawling experience)",
 		"moreLightning": "Zeus is displeased (More lightning strikes)",
-		"noLightning": "Zeus is appeased (Disables lightning strikes)"
+		"noLightning": "Zeus is appeased (Disables lightning strikes)",
+		"manySpiderCaves": "A brimming cup of spiders. (World has more spider caves)"
 	},
 	"CaptureBiomeChoice": {
 		"0": "Automatic",
@@ -3739,7 +3768,9 @@
 		"74": "Grey “GreyL1me” Kalinkin",
 		"75": "Alex “Artyrian” Ramos",
 		"76": "CheesyPaninie",
-		"77": "Yrimir"
+		"77": "SorbetCafe",
+		"78": "Shyguymask",
+		"79": "Yrimir"
 	},
 	"CreditsRollCategory_Localization": {
 		"1": "Localization",
@@ -3803,5 +3834,35 @@
 		"Forums": "Forums",
 		"Merch": "Store",
 		"Wiki": "Wiki"
+	},
+	"Crossplay": {
+		"SearchLan": "Join via LAN",
+		"SearchLanTitle": "Searching for local crossplay servers...",
+		"UPNPMessage": "Automatic port forwarding succeeded for this crossplay session. Add a server at address {0} and port {1} to join.",
+		"UPNPFailedMessage": "Automatic port forwarding failed for this crossplay session. The host requires a router with UPnP enabled.",
+		"RemoteServerIPText": "Invite others to join this crossplay session by adding a server at address [c/FF77DD:{0}] and port [c/77FFDD:{1}].",
+		"RemoteServerPassword": "The password required to join this server is [c/FFDD77:{0}].",
+		"RemoteServerSessionID": "Invite others to join this crossplay session with code [c/FF77DD:{0}].",
+		"RemoteServerNoIP": "Port forwarding failed for this crossplay session. The host requires a router with UPnP enabled.",
+		"RemoteServerRefreshUPNP": "Attempting to port forward this crossplay session via UPnP...",
+		"InviteRemoteServerSessionIDPassword": "Hey, come play Terraria with me!\nThe invite code is {0}.\nThe password is {1}.",
+		"InviteRemoteServerSessionID": "Hey, come play Terraria with me!\nThe invite code is {0}.",
+		"InviteRemoteServerIPText": "Hey, come play Terraria with me!\nThe server address is {0}.\nThe server port is {1}.",
+		"InviteRemoteServerIPTextPassword": "Hey, come play Terraria with me!\nThe server address is {0}.\nThe server port is {1}.\nThe password is {2}.",
+		"InviteTooltip": "Invite",
+		"InviteTitle": "Invite",
+		"CopyInviteToClipboard": "Copy session invite information to clipboard",
+		"InviteCodeButton": "Invite Code:",
+		"InviteCodeButtonEmpty": "Enter invite code...",
+		"NewServerEntryWorldName": "Join server for world info...",
+		"NoGameToJoin": "Add a server or wait for a friend to host a session...",
+		"AddServerTitle": "Add Server",
+		"AddServerButton": "Add",
+		"DiscardButton": "Discard",
+		"RemoveServerList": "Remove {0} from the server list?",
+		"BroadcastingOnLAN": "Anyone on your local network can join this crossplay session.",
+		"PlatformPlay": "Your friends can join this session from the multiplayer menu or you can send them an invitation to join.",
+		"HideSessionInfo": "Hide sensitive session information",
+		"ShowSessionInfo": "Show sensitive session information"
 	}
 }
