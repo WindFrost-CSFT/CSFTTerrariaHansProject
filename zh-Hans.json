@@ -23,7 +23,7 @@
     "DOWN": "Down"
   },
   "Language": {
-    "English": "亚共版汉化修正 v2026.26",
+    "English": "亚共版汉化修正 v2026.27",
     "Spanish": "中文论坛：bbstr.net/threads/3197",
     "French": "English",
     "Italian": "同时也欢迎各位来服务器一起游玩！",
@@ -428,7 +428,35 @@
     "PanControlMode_Click": "点击切换",
     "PanControlMode_Hold": "按住使用",
     "LookAheadGamepadInstruction": "缩放",
-    "Digtoise": "碎岩龟"
+    "Digtoise": "碎岩龟",
+    "LobbyCategoryJoin": "加入",
+    "LobbyCategoryHost": "主机",
+    "SearchingFriends": "正在搜索好友的主机会话……",
+    "SearchingLAN": "正在搜索本地跨平台会话……",
+    "ServerHeaderFriends": "好友",
+    "ServerHeaderLAN": "本地",
+    "ServerHeaderDedicated": "服务器",
+    "DedicatedMissing": "连接至远程跨平台会话……",
+    "Connect": "添加服务器",
+    "Join": "加入",
+    "EditRemote": "编辑",
+    "EditRemoteTitle": "编辑服务器",
+    "ConnectionServerIP": "地址：",
+    "ConnectionEnterServerIP": "输入 IP 地址或链接……",
+    "ConnectionServerPort": "端口：",
+    "ConnectionEnterServerPort": "输入端口：",
+    "ConnectionPassword": "密码：",
+    "ConnectionPasswordEmpty": "无",
+    "ConnectionRemember": "记住地址：",
+    "HostOptionsTitle": "主机",
+    "HostOptionsSteamMultiplayer": "Steam 多人模式：",
+    "HostOptionsAllowedUsers": "允许用户：",
+    "HostOptionsAllowedUsers_Friends": "好友",
+    "HostOptionsAllowedUsers_InviteOnly": "仅限邀请",
+    "HostOptionsFriendsOfFriends": "好友添加好友：",
+    "HostOptionsFriendsCanInvite": "好友可邀请：",
+    "Show": "显示",
+    "Hide": "隐藏"
   },
   "SecretSeedDescription": {
     "paintEverythingGray": "回到那个没有五颜六色烦扰的单纯时代吧！ （世界被涂成灰色）",
@@ -467,7 +495,8 @@
     "teamBasedSpawns": "别踏进我们的地盘！ （玩家出生点按队伍颜色区分）",
     "dualDungeons": "买一送一的地牢冒险！ （世界拥有双地牢体验）",
     "moreLightning": "宙斯不悦（更多雷击）",
-    "noLightning": "宙斯息怒了（禁用雷击）"
+    "noLightning": "宙斯息怒了（禁用雷击）",
+    "manySpiderCaves": "超大杯的蜘蛛（世界中出现更多蜘蛛洞）。"
   },
   "CaptureBiomeChoice": {
     "0": "自动",
@@ -3736,7 +3765,9 @@
     "74": "Grey “GreyL1me” Kalinkin",
     "75": "Alex “Artyrian” Ramos",
     "76": "CheesyPaninie",
-    "77": "Yrimir"
+    "77": "SorbetCafe",
+    "78": "Shyguymask",
+    "79": "Yrimir"
   },
   "CreditsRollCategory_SpecialThanksto": {
     "1": "特别鸣谢",
@@ -3820,5 +3851,35 @@
     "Updated": "已更新：{0}",
     "ErrorUpdating": "更新出错：{0}\n{1}",
     "LocalizationsReloaded": "由于更新，已重新加载本地化文本：{0}"
+  },
+  "Crossplay": {
+    "SearchLan": "通过局域网加入",
+    "SearchLanTitle": "正在搜索本地跨平台服务器……",
+    "UPNPMessage": "已成功为本次跨平台会话自动设置端口转发。添加服务器时，输入地址 {0} 和端口 {1} 即可加入。",
+    "UPNPFailedMessage": "本次跨平台会话的自动端口转发失败。主机需启用 UPnP 路由。",
+    "RemoteServerIPText": "想邀请其他人加入本次跨平台会话，只需让他们添加服务器，并输入地址 [c/FF77DD:{0}] 和端口 [c/77FFDD:{1}] 即可。",
+    "RemoteServerPassword": "加入此服务器所需的密码为 [c/FFDD77:{0}]。",
+    "RemoteServerSessionID": "邀请其他人使用邀请码 [c/FF77DD:{0}] 加入本次跨平台会话。",
+    "RemoteServerNoIP": "本次跨平台会话的端口转发失败。主机需启用 UPnP 路由。",
+    "RemoteServerRefreshUPNP": "正在尝试通过 UPnP 为本次跨平台会话设置端口转发……",
+    "InviteRemoteServerSessionIDPassword": "嗨，和我一起玩泰拉瑞亚吧！\n邀请码是：{0}。\n密码是：{1}。",
+    "InviteRemoteServerSessionID": "嗨，和我一起玩泰拉瑞亚吧！\n邀请码是：{0}。",
+    "InviteRemoteServerIPText": "嗨，和我一起玩泰拉瑞亚吧！\n服务器地址是：{0}。\n端口是：{1}。",
+    "InviteRemoteServerIPTextPassword": "嗨，和我一起玩泰拉瑞亚吧！\n服务器地址是：{0}。\n端口是：{1}。\n密码是：{2}。",
+    "InviteTooltip": "邀请",
+    "InviteTitle": "邀请",
+    "CopyInviteToClipboard": "将会话邀请信息复制到剪贴板",
+    "InviteCodeButton": "邀请码：",
+    "InviteCodeButtonEmpty": "输入邀请码……",
+    "NewServerEntryWorldName": "加入服务器获取世界信息……",
+    "NoGameToJoin": "加入服务器或等待好友创建会话……",
+    "AddServerTitle": "添加服务器",
+    "AddServerButton": "添加",
+    "DiscardButton": "放弃",
+    "RemoveServerList": "从服务器列表中移除 {0} 吗？",
+    "BroadcastingOnLAN": "本地局域网中的任何人均可加入此跨平台会话。",
+    "PlatformPlay": "你的好友可以通过多人游戏菜单或你发送的邀请加入此会话。",
+    "HideSessionInfo": "隐藏敏感会话信息",
+    "ShowSessionInfo": "显示敏感会话信息"
   }
 }
